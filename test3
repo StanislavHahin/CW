@@ -1,0 +1,17 @@
+program SQUA
+var 
+    int16_t AVAL, BVAL, XVAL, IVAL, JVAL;
+start
+    get AVAL;
+    get BVAL;
+
+    for XVAL <- AVAL to BVAL do
+        put XVAL * XVAL;
+
+    XVAL <- 0;
+    for IVAL <- 1 to AVAL do
+        for JVAL <- 1 to BVAL do
+            XVAL <- XVAL + 1;
+
+    put XVAL;
+finish
